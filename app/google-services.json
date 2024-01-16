@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307724835352",
+    "project_id": "slagalica-firebase",
+    "storage_bucket": "slagalica-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307724835352:android:62f314fd951dd041ee816d",
+        "android_client_info": {
+          "package_name": "com.example.igricaslagalica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrZxbWmIyqpP0-GWwgrpbn3LQh4LABS74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
