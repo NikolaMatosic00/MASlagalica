@@ -1,19 +1,11 @@
-# KvizSlagalica
+# Slagalica - Android Igra
 
-Upustvo za projekat: 
+Dobrodošli u Slagalica, zabavnu Android igru koja testira vaše veštine i brzinu u rešavanju zagonetki!
 
-Download projekata 
-Otvoriti projekat i pokrenuti app na run.
+## Uputstva za instalaciju
 
-Opcija za igranje:
-Single Player / Anonimno bez registracije
-Multiplayer , napraviti profil kliknut na play online , osoba koja se pridruzuje isto ucinit.
+1. Preuzmite projekat koristeći opciju za preuzimanje ili klonirajte repozitorijum sa GitHub-a.
 
-
-
-
-
-
-
-
-
+```bash
+git clone https://github.com/vaš-nalog/Slagalica.git
+```
