@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="4dp"
+    >
+
+    <ImageView
+        android:id="@+id/kolona1Polje"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/polje" />
+
+    <ImageView
+        android:id="@+id/kolona2Polje"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/polje" />
+
+    <ImageView
+        android:id="@+id/kolona3Polje"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/polje" />
+
+    <ImageView
+        android:id="@+id/kolona4Polje"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/polje" />
+    <LinearLayout
+        android:id="@+id/kolonaHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/skocko_hint"/>
+    </LinearLayout>
+
+</LinearLayout>

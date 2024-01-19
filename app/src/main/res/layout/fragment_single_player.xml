@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Igrice"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonKoZnaZna"
+        style="@style/GameButtonStyle"
+        android:text="Ko zna zna" />
+
+    <Button
+        android:id="@+id/buttonSpojnice"
+        style="@style/GameButtonStyle"
+        android:text="Spojnice" />
+
+    <Button
+        android:id="@+id/buttonAsocijacije"
+        style="@style/GameButtonStyle"
+        android:text="Asocijacije" />
+
+    <Button
+        android:id="@+id/buttonSkocko"
+        style="@style/GameButtonStyle"
+        android:text="Skočko" />
+
+    <Button
+        android:id="@+id/buttonKorakPoKorak"
+        style="@style/GameButtonStyle"
+        android:text="Korak po korak" />
+
+    <Button
+        android:id="@+id/buttonMojBroj"
+        style="@style/GameButtonStyle"
+        android:text="Moj broj" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Back"
+        />
+
+
+</LinearLayout>

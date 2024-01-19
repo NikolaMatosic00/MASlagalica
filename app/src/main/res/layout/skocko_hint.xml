@@ -1,0 +1,54 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:padding="2dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/polje"
+             />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/polje"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/polje"
+             />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/polje"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>
