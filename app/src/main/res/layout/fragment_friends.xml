@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Prikazivanje polja za pretragu -->
+
+
+    <!-- Gumb za dodavanje prijatelja -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:text="Prijatelji:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Pronađi prijatelja"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColorHint="#808080" />
+
+    <!-- Prikazivanje liste prijatelja -->
+
+    <Button
+        android:id="@+id/buttonAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Dodaj prijatelja" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMyFriends"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+</LinearLayout>

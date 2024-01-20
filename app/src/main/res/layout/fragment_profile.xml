@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Naslov -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Korisnički profil"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <!-- Slika korisnika -->
+
+            <!-- Korisničko ime -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Korisničko ime"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <!-- Email adresa -->
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Email adresa"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <!-- Statistika igrača -->
+                    <TextView
+                        android:id="@+id/textViewStatistics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Statistika igrača"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <!-- Tokeni igrača -->
+                    <TextView
+                        android:id="@+id/textViewTokeni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Tokeni igrača"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </LinearLayout>
+        </LinearLayout>
+            <!-- Button za igru -->
+            <Button
+                android:id="@+id/buttonPlayOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Započni partiju" />
+
+            <Button
+                android:id="@+id/buttonFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prijatelji" />
+
+            <!-- Opcija za logout -->
+            <Button
+                android:id="@+id/buttonRangList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rang lista" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+
+</FrameLayout>
