@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.igricaslagalica.view.ProfileFragment"
+        android:label="User profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action android:id="@+id/action_profileFragment_to_online_spojnice"
+            app:destination="@+id/fragment_gameone"/>
+        <action
+            android:id="@+id/action_profileFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_score_list"
+            app:destination="@id/score_list" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_gameone"
+        android:name="com.example.igricaslagalica.view.GameOneFragment"
+        android:label="Game One"  >
+
+        <action android:id="@+id/action_profileFragment_to_online_spojnice"
+            app:destination="@+id/fragment_gameone"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/spojnica_single"
+        android:name="com.example.igricaslagalica.view.signleplayer.SpojnicaSingleFragment"
+        android:label="Game One"  >
+        <action
+            android:id="@+id/action_spojnica_single_to_asocijacijaGame"
+            app:destination="@id/asocijacijaGame" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.igricaslagalica.view.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_singlePlayer"
+            app:destination="@id/singlePlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.igricaslagalica.view.RegistrationFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/koZnaZnaGame"
+        android:name="com.example.igricaslagalica.view.signleplayer.KoZnaZnaGame"
+        android:label="fragment_ko_zna_zna_game"
+        tools:layout="@layout/fragment_ko_zna_zna_game" >
+
+        <action
+            android:id="@+id/action_koZnaZnaGame_to_spojnica_single"
+            app:destination="@id/spojnica_single" />
+    </fragment>
+    <fragment
+        android:id="@+id/mojBroj"
+        android:name="com.example.igricaslagalica.view.signleplayer.MojBroj"
+        android:label="fragment_moj_broj"
+        tools:layout="@layout/fragment_moj_broj" >
+        <action
+            android:id="@+id/action_mojBroj_to_singlePlayer"
+            app:destination="@id/singlePlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/korakPoKorak"
+        android:name="com.example.igricaslagalica.view.signleplayer.KorakPoKorak"
+        android:label="fragment_korak_po_korak"
+        tools:layout="@layout/fragment_korak_po_korak" >
+        <action
+            android:id="@+id/action_singlePlayer_to_online_mojBroj"
+            app:destination="@id/mojBroj" />
+    </fragment>
+    <fragment
+        android:id="@+id/skockoGame"
+        android:name="com.example.igricaslagalica.view.signleplayer.SkockoGame"
+        android:label="fragment_skocko_game"
+        tools:layout="@layout/fragment_skocko_game" >
+        <action
+            android:id="@+id/action_singlePlayer_to_online_korakpokorak"
+            app:destination="@id/korakPoKorak" />
+    </fragment>
+    <fragment
+        android:id="@+id/singlePlayer"
+        android:name="com.example.igricaslagalica.view.SinglePlayer"
+        android:label="SinglePlayer" >
+        <action
+            android:id="@+id/action_singlePlayer_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_singlePlayer_to_skockoGame"
+            app:destination="@id/skockoGame" />
+        <action
+            android:id="@+id/action_singlePlayer_to_korakPoKorak"
+            app:destination="@id/korakPoKorak" />
+        <action
+            android:id="@+id/action_singlePlayer_to_mojBroj"
+            app:destination="@id/mojBroj" />
+        <action
+            android:id="@+id/action_singlePlayer_to_koZnaZnaGame"
+            app:destination="@id/koZnaZnaGame" />
+        <action
+            android:id="@+id/action_singlePlayer_to_asocijacijaGame"
+            app:destination="@id/asocijacijaGame" />
+        <action
+            android:id="@+id/action_singlePlayer_to_spojnica_single"
+            app:destination="@id/spojnica_single" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/asocijacijaGame"
+        android:name="com.example.igricaslagalica.view.signleplayer.AsocijacijaGame"
+        android:label="fragment_asocijacija_game"
+        tools:layout="@layout/fragment_asocijacija_game" >
+        <action
+            android:id="@+id/action_singlePlayer_to_online_skockoGame"
+            app:destination="@id/skockoGame" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.example.igricaslagalica.view.FriendsFragment"
+        android:label="FriendsFragment" >
+        <action
+            android:id="@+id/action_friendsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/asocijacijaGameMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.AsocijacijaGameMulti"
+        android:label="AsocijacijaGameMulti" >
+        <action
+            android:id="@+id/action_asocijacijaGameMulti_to_skockoGameMulti"
+            app:destination="@id/skockoGameMulti" />
+    </fragment>
+    <fragment
+        android:id="@+id/koZnaZnaGameMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.KoZnaZnaGameMulti"
+        android:label="KoZnaZnaGameMulti" >
+        <action
+            android:id="@+id/action_koZnaZnaGameMulti_to_spojnicaSingleFragmentMulti"
+            app:destination="@id/spojnicaSingleFragmentMulti" />
+    </fragment>
+    <fragment
+        android:id="@+id/korakPoKorakMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.KorakPoKorakMulti"
+        android:label="KorakPoKorakMulti" >
+        <action
+            android:id="@+id/action_korakPoKorakMulti_to_mojBrojMulti"
+            app:destination="@id/mojBrojMulti" />
+    </fragment>
+    <fragment
+        android:id="@+id/mojBrojMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.MojBrojMulti"
+        android:label="MojBrojMulti" >
+        <action
+            android:id="@+id/action_mojBrojMulti_to_fragment_gameone"
+            app:destination="@id/fragment_gameone" />
+    </fragment>
+    <fragment
+        android:id="@+id/skockoGameMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.SkockoGameMulti"
+        android:label="SkockoGameMulti" >
+        <action
+            android:id="@+id/action_skockoGameMulti_to_korakPoKorakMulti"
+            app:destination="@id/korakPoKorakMulti" />
+    </fragment>
+    <fragment
+        android:id="@+id/spojnicaSingleFragmentMulti"
+        android:name="com.example.igricaslagalica.view.multiplayer.SpojnicaSingleFragmentMulti"
+        android:label="SpojnicaSingleFragmentMulti" >
+        <action
+            android:id="@+id/action_spojnicaSingleFragmentMulti_to_asocijacijaGameMulti"
+            app:destination="@id/asocijacijaGameMulti" />
+    </fragment>
+    <fragment
+        android:id="@+id/score_list"
+        android:name="com.example.igricaslagalica.view.ScoreFragment"
+        android:label="ScoreFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/endGameScore"
+        android:name="com.example.igricaslagalica.view.GameEndScore"
+        android:label="GameEndScore" >
+        <action
+            android:id="@+id/action_endGameScore_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>
